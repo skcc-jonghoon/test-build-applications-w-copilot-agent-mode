@@ -1,0 +1,94 @@
+.app-shell {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f3f7fb 0%, #dce8f6 50%, #edf4fb 100%);
+  color: #1d3557;
+}
+
+.app-title-wrap {
+  background: #ffffff;
+  border-radius: 1rem;
+  border: 1px solid #c8d9ee;
+}
+
+.app-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 0.75rem;
+  background: #f8fbff;
+  border: 1px solid #d6e3f3;
+  padding: 0.25rem;
+}
+
+.app-heading {
+  color: #0b3d91;
+}
+
+.app-subtitle {
+  color: #355070;
+}
+
+.app-link {
+  color: #1565c0;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.app-link:hover {
+  color: #0d47a1;
+  text-decoration: underline;
+}
+
+.nav-pills .nav-link {
+  background: #e3eefb;
+  color: #1d4e89;
+  border: 1px solid #c0d7f2;
+  border-radius: 999px;
+}
+
+.nav-pills .nav-link.active {
+  background: #1e5aa8;
+  border-color: #1e5aa8;
+  color: #ffffff;
+  box-shadow: 0 0.35rem 0.75rem rgba(30, 90, 168, 0.3);
+}
+
+.table thead.table-dark {
+  --bs-table-bg: #1e3a5f;
+}
+
+.table tbody tr:nth-of-type(odd) {
+  --bs-table-accent-bg: #f1f7ff;
+}
+
+.btn-primary {
+  --bs-btn-bg: #2c6cb8;
+  --bs-btn-border-color: #2c6cb8;
+  --bs-btn-hover-bg: #1f5390;
+  --bs-btn-hover-border-color: #1f5390;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #2c6cb8;
+  --bs-btn-border-color: #2c6cb8;
+  --bs-btn-hover-bg: #2c6cb8;
+  --bs-btn-hover-border-color: #2c6cb8;
+}
+
+.card-header h2,
+.modal-title {
+  color: #1e3a5f;
+}
+
+.card-header .link-primary {
+  color: #1f6fbe;
+}
+
+.modal {
+  background: rgba(33, 37, 41, 0.3);
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
