@@ -40,13 +40,18 @@ router.register(r'workouts', WorkoutViewSet)
 @api_view(['GET'])
 def api_root(request, format=None):
     """Expose OctoFit API collection endpoints."""
+    users_url = f'{base_url}/api/users/'
+    teams_url = f'{base_url}/api/teams/'
+    activities_url = f'{base_url}/api/activities/'
+    leaderboard_url = f'{base_url}/api/leaderboard/'
+    workouts_url = f'{base_url}/api/workouts/'
     return Response(
         {
-            'users': request.build_absolute_uri('/api/users/'),
-            'teams': request.build_absolute_uri('/api/teams/'),
-            'activities': request.build_absolute_uri('/api/activities/'),
-            'leaderboard': request.build_absolute_uri('/api/leaderboard/'),
-            'workouts': request.build_absolute_uri('/api/workouts/'),
+            'users': users_url,
+            'teams': teams_url,
+            'activities': activities_url,
+            'leaderboard': leaderboard_url,
+            'workouts': workouts_url,
             'base_url': base_url,
         }
     )
